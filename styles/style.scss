@@ -29,9 +29,36 @@
         display: flex;
         justify-content: space-between;
     }
-
-    
 }
 
+// section-cards
 
+.section-cards {
+    display: flex;
+    flex-direction: column;
 
+    .cards-info {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// section-blog
+
+.section-blog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// section-account
+
+.section-account {
+    display: flex;
+    flex-direction: column;
+
+    .account-info {
+        display: flex;
+        justify-content: space-between;
+    }
+}

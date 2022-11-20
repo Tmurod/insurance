@@ -38,3 +38,61 @@
     width: 628px;
     padding-bottom: 25px;
 }
+
+@mixin cards-sub__h2 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 82px;
+    color: #2B272F;
+    margin-top: 45px;
+    padding-bottom: 96px;
+}
+
+@mixin cards-info__h2 {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 48px;
+    color: #2B272F;
+}
+
+@mixin cards-info__p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2B272F;
+    width: 400px;
+}
+
+@mixin blog-h1 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 55px;
+    color: #FFFFFF;
+    width: 452px;
+    padding-left: 103px;
+    padding: 97px;
+}
+
+@mixin footer-sub__h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+}
+
+@mixin footer-active__h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #837D87;
+    padding-bottom: 23px;
+}
+
+@mixin footer-h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2B272F;
+    padding-bottom: 23px;
+    
+}

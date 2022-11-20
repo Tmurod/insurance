@@ -66,4 +66,83 @@ body {
     }
 }
 
+// section-cards
 
+.section-cards {
+    margin-top: 387px;
+
+    .cards-subtitle h2 {
+        @include cards-sub__h2
+    }
+
+    .cards-info h2 {
+        @include cards-info__h2
+    }
+
+    .cards-info p {
+        @include cards-info__p
+    }
+}
+
+// section-blog
+
+.section-blog {
+    background-color: #2D2640;
+    margin-top: 139px;
+
+    h1 {
+        @include blog-h1
+    }
+
+    button {
+        background-color: #2D2640;
+        color: #fff;
+        border: 1px solid #fff;
+        margin-right: 74px;
+        @include button
+    }
+}
+
+// section-account
+
+footer {
+    margin-top: 184px;
+    background: #F3F3F3;
+
+    .account-logos {
+        padding-top: 88px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1.5px solid #837D87;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 100px;
+
+        h2 {
+            @include footer-sub__h2
+        }
+
+        img {
+            padding-left: 26px;
+        }
+
+    }
+
+    
+    .account-info div {
+        padding-right: 50px;
+        padding-bottom: 180px;
+
+        .active {
+            @include footer-active__h2
+        }
+    
+        h3 {
+            @include footer-h3  
+        }
+    }
+
+    
+}

@@ -78,6 +78,99 @@ body {
   top: 127px;
 }
 
+.section-cards {
+  margin-top: 387px;
+}
+.section-cards .cards-subtitle h2 {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 82px;
+  color: #2B272F;
+  margin-top: 45px;
+  padding-bottom: 96px;
+}
+.section-cards .cards-info h2 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 48px;
+  color: #2B272F;
+}
+.section-cards .cards-info p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2B272F;
+  width: 400px;
+}
+
+.section-blog {
+  background-color: #2D2640;
+  margin-top: 139px;
+}
+.section-blog h1 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 55px;
+  color: #FFFFFF;
+  width: 452px;
+  padding-left: 103px;
+  padding: 97px;
+}
+.section-blog button {
+  background-color: #2D2640;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-right: 74px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 10.5px 30.5px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 184px;
+  background: #F3F3F3;
+}
+footer .account-logos {
+  padding-top: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1.5px solid #837D87;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 100px;
+}
+footer .account-logos h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  color: #000000;
+}
+footer .account-logos img {
+  padding-left: 26px;
+}
+footer .account-info div {
+  padding-right: 50px;
+  padding-bottom: 180px;
+}
+footer .account-info div .active {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #837D87;
+  padding-bottom: 23px;
+}
+footer .account-info div h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2B272F;
+  padding-bottom: 23px;
+}
+
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -94,6 +187,30 @@ body {
 }
 
 .section-intro .section-intro__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-cards {
+  display: flex;
+  flex-direction: column;
+}
+.section-cards .cards-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-account {
+  display: flex;
+  flex-direction: column;
+}
+.section-account .account-info {
   display: flex;
   justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
