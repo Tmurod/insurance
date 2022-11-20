@@ -1,0 +1,40 @@
+
+@mixin brand {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+}
+
+@mixin nav-links {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #837D87;
+}
+
+@mixin button {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 10.5px 30.5px;
+    cursor: pointer;
+}
+
+@mixin intro-h2 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 82px;
+    padding-top: 54px;
+    color: #ffffff;
+    width: 452px;
+}
+
+@mixin intro-p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 628px;
+    padding-bottom: 25px;
+}
