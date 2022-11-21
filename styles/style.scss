@@ -7,6 +7,10 @@
     display: flex;
     justify-content: space-between;
 
+    img {
+        display: none;
+    }
+
     .header-navbar {
         display: flex;
     }
@@ -28,6 +32,10 @@
     .section-intro__info {
         display: flex;
         justify-content: space-between;
+
+        .intro-info__rwd-image {
+            display: none;
+        }
     }
 }
 
@@ -61,4 +69,89 @@
         display: flex;
         justify-content: space-between;
     }
+}
+
+@media only screen and ( max-width: 415px ) {
+    .container {
+        width: 415px;
+        margin: 0 auto;
+    }
+    
+    .section-header {
+        flex: none;
+
+        .header-navbar {
+            display: none;
+        }
+
+        .header-brand {
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                display: flex;
+            }
+        }
+    }
+
+    .section-intro__info {
+        display: flex;
+        flex-direction: column;
+        width: 415px;
+
+        .intro-info__rwd-image {
+            display: flex;
+        }
+
+        .intro-info__text {
+            text-align: center;
+
+            img {
+            display: none;
+            }
+
+            h2 {
+            width: 320px;
+            }
+            p {
+                width: 325px;
+            }
+        }
+
+        .intro-info__image {
+            display: none;
+        }
+    }
+
+    .section-cards {
+        display: flex;
+        flex-direction: column;
+
+        .cards-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+    
+    .section-blog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-account {
+        display: flex;
+        flex-direction: column;
+
+        .account-logos {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .account-info {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
 }
