@@ -5,8 +5,31 @@ body {
 }
 
 .container {
-  width: 1440px;
-  margin: 0 auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
 }
 
 .section-header {
@@ -40,7 +63,7 @@ body {
 }
 
 .section-intro {
-  background-color: #2D2640;
+  background-color: #2d2640;
   margin-top: 26px;
 }
 .section-intro .info-text__line {
@@ -52,19 +75,17 @@ body {
   line-height: 82px;
   padding-top: 54px;
   color: #ffffff;
-  width: 452px;
 }
 .section-intro p {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
-  width: 628px;
   padding-bottom: 25px;
 }
 .section-intro button {
   border: 1px solid #fff;
-  background-color: #2D2640;
+  background-color: #2d2640;
   color: #fff;
   padding-bottom: 160px;
   font-weight: 500;
@@ -100,11 +121,10 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #2B272F;
-  width: 400px;
 }
 
 .section-blog {
-  background-color: #2D2640;
+  background-color: #2d2640;
   margin-top: 139px;
 }
 .section-blog h1 {
@@ -112,12 +132,11 @@ body {
   font-size: 50px;
   line-height: 55px;
   color: #FFFFFF;
-  width: 452px;
   padding-left: 103px;
   padding: 97px;
 }
 .section-blog button {
-  background-color: #2D2640;
+  background-color: #2d2640;
   color: #fff;
   border: 1px solid #fff;
   margin-right: 74px;
@@ -130,14 +149,14 @@ body {
 
 footer {
   margin-top: 184px;
-  background: #F3F3F3;
+  background: #f3f3f3;
 }
 footer .account-logos {
   padding-top: 88px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1.5px solid #837D87;
+  border: 1.5px solid #837d87;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -175,6 +194,23 @@ footer .account-info div h3 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 576px) {
+  .section-header button {
+    display: none;
+  }
+  .section-header .header-brand img {
+    display: flex;
+  }
+}
+@media (max-width: 992px) {
+  .section-header .section-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-header .header-nav__items {
+    display: none;
+  }
+}
 .section-header img {
   display: none;
 }
@@ -189,12 +225,49 @@ footer .account-info div h3 {
   display: flex;
 }
 
+.section-intro {
+  text-align: center;
+}
 .section-intro .section-intro__info {
   display: flex;
   justify-content: space-between;
 }
-.section-intro .section-intro__info .intro-info__rwd-image {
+@media (max-width: 1200px) {
+  .section-intro .section-intro__info {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 576px) {
+  .section-intro .section-intro__info .intro-info__rwd-image {
+    max-width: 100%;
+    size: 100%;
+  }
+  .section-intro .section-intro__info .info-text__line {
+    display: none;
+  }
+  .section-intro .section-intro__info h2 {
+    font-size: 45px;
+  }
+  .section-intro .section-intro__info p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .section-intro .section-intro__info button {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 1200px) {
+  .section-intro .section-intro__info .intro-info__image {
+    display: none;
+  }
+}
+.section-intro .intro-info__rwd-image {
   display: none;
+}
+@media (max-width: 1200px) {
+  .section-intro .intro-info__rwd-image {
+    display: block;
+  }
 }
 
 .section-cards {
@@ -205,6 +278,16 @@ footer .account-info div h3 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 576px) {
+  .section-cards .section-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-cards .cards-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .section-blog {
   display: flex;
@@ -212,6 +295,20 @@ footer .account-info div h3 {
   align-items: center;
 }
 
+@media (max-width: 576px) {
+  .section-blog {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-blog h1 {
+    font-size: 32px;
+  }
+  .section-blog button {
+    margin: 0;
+    margin-bottom: 74px;
+  }
+}
 .section-account {
   display: flex;
   flex-direction: column;
@@ -220,62 +317,8 @@ footer .account-info div h3 {
   display: flex;
   justify-content: space-between;
 }
-
-@media only screen and (max-width: 415px) {
-  .container {
-    width: 415px;
-    margin: 0 auto;
-  }
-  .section-header {
-    flex: none;
-  }
-  .section-header .header-navbar {
-    display: none;
-  }
-  .section-header .header-brand {
-    display: flex;
-    justify-content: space-around;
-  }
-  .section-header .header-brand img {
-    display: flex;
-  }
-  .section-intro__info {
-    display: flex;
-    flex-direction: column;
-    width: 415px;
-  }
-  .section-intro__info .intro-info__rwd-image {
-    display: flex;
-  }
-  .section-intro__info .intro-info__text {
-    text-align: center;
-  }
-  .section-intro__info .intro-info__text img {
-    display: none;
-  }
-  .section-intro__info .intro-info__text h2 {
-    width: 320px;
-  }
-  .section-intro__info .intro-info__text p {
-    width: 325px;
-  }
-  .section-intro__info .intro-info__image {
-    display: none;
-  }
-  .section-cards {
-    display: flex;
-    flex-direction: column;
-  }
-  .section-cards .cards-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .section-blog {
-    display: flex;
-    flex-direction: column;
-  }
-  .section-account {
+@media (max-width: 576px) {
+  .section-account .section-account {
     display: flex;
     flex-direction: column;
   }

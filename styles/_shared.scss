@@ -1,148 +1,163 @@
-
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    width: 1440px;
-    margin: 0 auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include xl {
+    max-width: 1140px;
+  }
+
+  @include lg {
+    max-width: 960px;
+  }
+
+  @include md {
+    max-width: 720px;
+  }
+
+  @include sm {
+    max-width: 540px;
+  }
 }
 
 .section-header {
-    padding-top: 43px;
+  padding-top: 43px;
 
-    h2 {
-        @include brand
-    }
+  h2 {
+    @include brand;
+  }
 
-    li {
-        list-style: none;
-        padding-left: 50px;
-    }
+  li {
+    list-style: none;
+    padding-left: 50px;
+  }
 
-    a {
-        text-decoration: none;
-        @include nav-links
-    }
+  a {
+    text-decoration: none;
+    @include nav-links;
+  }
 
-    button {
-        color: #000000;
-        margin-left: 50px;
-        @include button
-    }
+  button {
+    color: #000000;
+    margin-left: 50px;
+    @include button;
+  }
 }
 
 // section-intro
 
 .section-intro {
-    background-color: #2D2640;
-    margin-top: 26px;
+  background-color: #2d2640;
+  margin-top: 26px;
 
-    .info-text__line {
-        padding-top: 127px;
-    }
+  .info-text__line {
+    padding-top: 127px;
+  }
 
-    h2 {
-        @include intro-h2
-    }
+  h2 {
+    @include intro-h2;
+  }
 
-    p {
-        @include intro-p
-    }
+  p {
+    @include intro-p;
+  }
 
-    button {
-        border: 1px solid #fff;
-        background-color: #2D2640;
-        color: #fff;
-        padding-bottom: 160px;
-        @include button
-    }
+  button {
+    border: 1px solid #fff;
+    background-color: #2d2640;
+    color: #fff;
+    padding-bottom: 160px;
+    @include button;
+  }
 
-    .intro-info__image img {
-        position: relative;
-        top: 127px;
-    }
+  .intro-info__image img {
+    position: relative;
+    top: 127px;
+  }
 }
 
 // section-cards
 
 .section-cards {
-    margin-top: 387px;
+  margin-top: 387px;
 
-    .cards-subtitle h2 {
-        @include cards-sub__h2
-    }
+  .cards-subtitle h2 {
+    @include cards-sub__h2;
+  }
 
-    .cards-info h2 {
-        @include cards-info__h2
-    }
+  .cards-info h2 {
+    @include cards-info__h2;
+  }
 
-    .cards-info p {
-        @include cards-info__p
-    }
+  .cards-info p {
+    @include cards-info__p;
+  }
 }
 
 // section-blog
 
 .section-blog {
-    background-color: #2D2640;
-    margin-top: 139px;
+  background-color: #2d2640;
+  margin-top: 139px;
 
-    h1 {
-        @include blog-h1
-    }
+  h1 {
+    @include blog-h1;
+  }
 
-    button {
-        background-color: #2D2640;
-        color: #fff;
-        border: 1px solid #fff;
-        margin-right: 74px;
-        @include button
-    }
+  button {
+    background-color: #2d2640;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-right: 74px;
+    @include button;
+  }
 }
 
 // section-account
 
 footer {
-    margin-top: 184px;
-    background: #F3F3F3;
+  margin-top: 184px;
+  background: #f3f3f3;
 
-    .account-logos {
-        padding-top: 88px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border: 1.5px solid #837D87;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        margin-bottom: 100px;
+  .account-logos {
+    padding-top: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1.5px solid #837d87;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 100px;
 
-        h2 {
-            @include footer-sub__h2
-        }
-
-        img {
-            padding-left: 26px;
-        }
-
+    h2 {
+      @include footer-sub__h2;
     }
 
-    
-    .account-info div {
-        padding-right: 50px;
-        padding-bottom: 180px;
+    img {
+      padding-left: 26px;
+    }
+  }
 
-        .active {
-            @include footer-active__h2
-        }
-    
-        h3 {
-            @include footer-h3  
-        }
+  .account-info div {
+    padding-right: 50px;
+    padding-bottom: 180px;
+
+    .active {
+      @include footer-active__h2;
     }
 
-    
+    h3 {
+      @include footer-h3;
+    }
+  }
+  
 }

@@ -2,156 +2,275 @@
 @import "_shared.scss";
 @import "_variables.scss";
 
-
 .section-header {
+  display: flex;
+  justify-content: space-between;
+
+    @include col {
+
+        // .section-header {
+        //     display: flex;
+        // }
+
+        
+
+        button {
+            display: none;
+        }
+
+        .header-brand img {
+            display: flex;
+        }
+    }
+    
+    @include md {
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-nav__items {
+            display: none;
+        }
+    }
+
+  img {
+    display: none;
+  }
+
+  .header-navbar {
     display: flex;
-    justify-content: space-between;
+  }
 
-    img {
-        display: none;
-    }
+  .header-info {
+    display: flex;
+    align-items: center;
+  }
 
-    .header-navbar {
-        display: flex;
-    }
-
-    .header-info {
-        display: flex;
-        align-items: center;
-    }
-
-    ul {
-        display: flex;
-    }
+  ul {
+    display: flex;
+  }
 }
 
 // section-intro
 
 .section-intro {
-    
-    .section-intro__info {
-        display: flex;
-        justify-content: space-between;
+    text-align: center;
+
+  .section-intro__info {
+    display: flex;
+    justify-content: space-between;
+
+    @include lg {
+      flex-direction: column-reverse;
+    }
+
+    @include col {
+
+        .section-intro {
+            
+        }
 
         .intro-info__rwd-image {
+            max-width: 100%;
+            size: 100%;
+        }
+
+        .intro-info__text {
+        }
+
+        .info-text__line {
             display: none;
         }
+
+        h2 {
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        button {
+            margin-bottom: 60px;
+        }
     }
+
+    .intro-info__image {
+      @include lg {
+        display: none;
+      }
+    }
+  }
+
+  .intro-info__rwd-image {
+    display: none;
+
+    @include lg {
+      display: block;
+    }
+  }
 }
 
 // section-cards
 
 .section-cards {
+  display: flex;
+  flex-direction: column;
+
+  .cards-info {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @include col {
+    .section-cards {
+        display: flex;
+        flex-direction: column;
+    }
 
     .cards-info {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
+
+  }
 }
 
 // section-blog
 
 .section-blog {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@include col {
+    .section-blog {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h1 {
+            font-size: 32px;
+        }
+
+        button {
+            margin: 0;
+            margin-bottom: 74px;
+        }
+    }
 }
 
 // section-account
 
 .section-account {
+  display: flex;
+  flex-direction: column;
+
+  .account-info {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    .account-info {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media only screen and ( max-width: 415px ) {
-    .container {
-        width: 415px;
-        margin: 0 auto;
-    }
-    
-    .section-header {
-        flex: none;
-
-        .header-navbar {
-            display: none;
-        }
-
-        .header-brand {
-            display: flex;
-            justify-content: space-around;
-
-            img {
-                display: flex;
-            }
-        }
-    }
-
-    .section-intro__info {
-        display: flex;
-        flex-direction: column;
-        width: 415px;
-
-        .intro-info__rwd-image {
-            display: flex;
-        }
-
-        .intro-info__text {
-            text-align: center;
-
-            img {
-            display: none;
-            }
-
-            h2 {
-            width: 320px;
-            }
-            p {
-                width: 325px;
-            }
-        }
-
-        .intro-info__image {
-            display: none;
-        }
-    }
-
-    .section-cards {
-        display: flex;
-        flex-direction: column;
-
-        .cards-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-    }
-    
-    .section-blog {
-        display: flex;
-        flex-direction: column;
-    }
-
+  @include col {
     .section-account {
         display: flex;
         flex-direction: column;
-
-        .account-logos {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .account-info {
-            display: flex;
-            flex-direction: column;
-        }
     }
 
+    .account-logos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .account-info {
+        display: flex;
+        flex-direction: column;
+    }
+  }
 }
+
+// @media only screen and (max-width: 415px) {
+//   .container {
+//     width: 415px;
+//     margin: 0 auto;
+//   }
+
+//   .section-header {
+//     flex: none;
+
+//     .header-navbar {
+//       display: none;
+//     }
+
+//     .header-brand {
+//       display: flex;
+//       justify-content: space-around;
+
+//       img {
+//         display: flex;
+//       }
+//     }
+//   }
+
+//   .section-intro__info {
+//     display: flex;
+//     flex-direction: column;
+//     width: 415px;
+
+//     .intro-info__rwd-image {
+//       display: flex;
+//     }
+
+//     .intro-info__text {
+//       text-align: center;
+
+//       img {
+//         display: none;
+//       }
+
+//       h2 {
+//         width: 320px;
+//       }
+//       p {
+//         width: 325px;
+//       }
+//     }
+
+//     .intro-info__image {
+//       display: none;
+//     }
+//   }
+
+//   .section-cards {
+//     display: flex;
+//     flex-direction: column;
+
+//     .cards-info {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-around;
+//     }
+//   }
+
+//   .section-blog {
+//     display: flex;
+//     flex-direction: column;
+//   }
+
+//   .section-account {
+//     display: flex;
+//     flex-direction: column;
+
+//     .account-logos {
+//       display: flex;
+//       flex-direction: column;
+//     }
+
+//     .account-info {
+//       display: flex;
+//       flex-direction: column;
+//     }
+//   }
+// }
